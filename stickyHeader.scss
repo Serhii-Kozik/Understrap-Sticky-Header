@@ -1,0 +1,79 @@
+// Sticky header
+.site{
+
+    margin-top: 80px;
+
+    .nav-wrapper {
+
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        border: 0;
+        z-index: 999;
+    }
+}
+
+.admin-bar {
+
+    .site{
+        margin-top: 112px;
+
+        .nav-wrapper{
+        
+            top: 32px;
+            transition: top 0.3s;
+        }
+    }
+   
+}
+
+@include media-breakpoint-down(md){
+
+    .admin-bar {
+
+        .site{
+        
+            margin-top: 80px;
+    
+            .nav-wrapper{
+            
+                top: 0px;
+            }
+        }
+       
+    }
+}
+@include media-breakpoint-down(sm){
+
+    .admin-bar {
+
+        .site{
+        
+            margin-top: 112px;
+    
+            .nav-wrapper{
+            
+                top: 46px;
+            }
+        }
+       
+    }
+}
+@include media-breakpoint-down(xs){
+
+    .admin-bar {
+
+        .site{
+        
+            margin-top: 66px;
+    
+            .nav-wrapper{
+            
+                top: 0px;
+            }
+        }
+       
+    }
+}
+
+// end sticky header
